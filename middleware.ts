@@ -13,7 +13,7 @@ export default clerkMiddleware(async (auth, req) => {
   
   if (isProtectedRoute(req)) {
     console.log("Protected route accessed:", req.url)
-    await auth.protect()
+    await auth.protect();
   }
 })
 
